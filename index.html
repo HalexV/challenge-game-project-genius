@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="icon" href="./images/genius-icon.svg" />
+
+    <title>Genius</title>
+  </head>
+  <body>
+    <header>
+      <h1>Genius Game</h1>
+    </header>
+    <main>
+      <div id="boardGame">
+        <button id="yellow-btn" onmouseenter="playAudio(this)">
+          <audio preload="auto">
+            <source src="./sounds/a5.mp3" type="audio/mpeg" />
+          </audio>
+        </button>
+        <button id="blue-btn" onmouseenter="playAudio(this)">
+          <audio preload="auto">
+            <source src="./sounds/b5.mp3" type="audio/mpeg" />
+          </audio>
+        </button>
+        <button id="center-btn"></button>
+        <button id="red-btn" onmouseenter="playAudio(this)">
+          <audio preload="auto">
+            <source src="./sounds/c5.mp3" type="audio/mpeg" />
+          </audio>
+        </button>
+        <button id="green-btn" onmouseenter="playAudio(this)">
+          <audio preload="auto">
+            <source src="./sounds/d5.mp3" type="audio/mpeg" />
+          </audio>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div class="developed-by">
+        <a href="https://www.linkedin.com/in/h%C3%A1lex-viotto-gomes-5375771a0/"
+          >Desenvolvido por: Hálex Viotto Gomes</a
+        >
+      </div>
+      <div class="credits">
+        <div>
+          Ícones feitos por
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/br/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./game.js"></script>
+    <script src="./interface.js"></script>
+  </body>
+</html>
