@@ -167,7 +167,7 @@ footer {
 .developed-by a {
   text-decoration: none;
   color: black;
-  font-size: clamp(1rem, 1vw, 2rem);
+  font-size: clamp(1.6rem, 3vw, 2rem);
 }
 
 .credits {
