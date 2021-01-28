@@ -31,6 +31,10 @@ body {
   flex-direction: column;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 header {
   height: 10%;
   background-color: var(--color-yellow);
