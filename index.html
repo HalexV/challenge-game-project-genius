@@ -17,28 +17,31 @@
     <title>Genius</title>
   </head>
   <body>
+    <div id="loading-screen">Loading...</div>
     <header>
       <h1>Genius Game</h1>
     </header>
     <main>
       <div id="boardGame">
-        <button id="yellow-btn" onmouseenter="playAudio(this)">
+        <button id="yellow-btn" onclick="clickButton(this)">
           <audio preload="auto">
             <source src="./sounds/a5.mp3" type="audio/mpeg" />
           </audio>
         </button>
-        <button id="blue-btn" onmouseenter="playAudio(this)">
+        <button id="blue-btn" onclick="clickButton(this)">
           <audio preload="auto">
             <source src="./sounds/b5.mp3" type="audio/mpeg" />
           </audio>
         </button>
-        <button id="center-btn"></button>
-        <button id="red-btn" onmouseenter="playAudio(this)">
+        <button id="center-btn" onclick="centerButton()">
+          <p id="center-btn-message">Start</p>
+        </button>
+        <button id="red-btn" onclick="clickButton(this)">
           <audio preload="auto">
             <source src="./sounds/c5.mp3" type="audio/mpeg" />
           </audio>
         </button>
-        <button id="green-btn" onmouseenter="playAudio(this)">
+        <button id="green-btn" onclick="clickButton(this)">
           <audio preload="auto">
             <source src="./sounds/d5.mp3" type="audio/mpeg" />
           </audio>
@@ -48,7 +51,7 @@
     <footer>
       <div class="developed-by">
         <a href="https://www.linkedin.com/in/h%C3%A1lex-viotto-gomes-5375771a0/"
-          >Desenvolvido por: Hálex Viotto Gomes</a
+          >Developed by: Hálex Viotto Gomes</a
         >
       </div>
       <div class="credits">
@@ -61,6 +64,8 @@
         </div>
       </div>
     </footer>
+
+    <div id="game-over-screen" onclick="hideGameOverScreen(this)"></div>
 
     <script src="./game.js"></script>
     <script src="./interface.js"></script>
